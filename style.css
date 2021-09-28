@@ -10,3 +10,8 @@ header {background-color: cyan;padding:1rem}
 .main-container{display: flex;}
 .side-nav {width: 20em;}
 .main {flex:1}
+label {display: block;padding-bottom: 0.5rem;}
+form {padding: 1rem;}
+input:invalid{border: 1px red solid;}
+form >div {padding:0.5rem ;}
+#Comments {width: 50vw;height: 3rem;}
