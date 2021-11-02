@@ -15,3 +15,4 @@ form {padding: 1rem;}
 input:invalid{border: 1px red solid;}
 form >div {padding:0.5rem ;}
 #Comments {width: 50vw;height: 3rem;}
+.red-text {color: red;}
