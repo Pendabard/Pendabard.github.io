@@ -7,13 +7,14 @@ html {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-se
 body {margin: 0;}
 h1 {margin: 0;}
 header {background-color: cyan;padding:1rem}
-.main-container{display: flex;}
+.main-container{display: flex; width: 90vw;max-width: 1000px;margin-left: auto;margin-right: auto;}
 .side-nav {width: 20em;}
 .main {flex:1}
 label {display: block;padding-bottom: 0.5rem;}
 form {padding: 1rem;}
 input:invalid{border: 1px red solid;}
 form >div {padding:0.5rem ;}
-#Comments {width: 50vw;height: 3rem;}
+#Comments {width: 90%;height: 3rem;}
 .red-text {color: red;}
 .Main-nav a {margin-right: 1rem;}
+.container {width: 90vw;max-width: 1000px;margin-left: auto;margin-right: auto;}
