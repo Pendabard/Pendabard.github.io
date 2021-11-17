@@ -30,7 +30,30 @@
     <div class="main-container">
         <main class="main">
             <h2>Prep steps</h2>
-            <h3> 2) Editing GRUB </h3>
+            <h3> 5) Configuring VM Manager </h3>
+            <p>Download virtio (stable) drivers:
+                https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html</p>
+                <p>
+                    Download the latest windows 10 iso from Microsoft's website.
+                </p>
+                <img src="./vm1.png" alt="Overview Page of VM Manager" >
+                <P>
+                    You have to start customizing the Virtual Machine before anything else
+                    </P>
+                    <p>
+                    you must name the VM win10 because of convinience
+                    </p>
+                    <p>
+Select the Q35 chipset and UEFI (not secure boot) as for Firmware
+                </P>
+                <p> Choose the max Logical Host CPU Core's Based on the Topology </p>
+
+                <img src="./vm2.png" alt="Cpu Topology" >
+                <p>Choose Ram Memory half of your PC's Total Ram</p>
+                <P>ADD the iso of windows 10 to your Virtual CD ROM Drive</P>
+                <P>Choose 'Virtual network 'default': NAT for the Temporary Network Card </P>
+                <p>Install windows like normal.</p>
+                    
 
         </main>
         <nav class="side-nav">

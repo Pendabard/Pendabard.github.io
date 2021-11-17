@@ -14,23 +14,54 @@
 
 <body>
     <header>
+    
         <div class="container">
-        <h1>Pendabard </h1>
-        <nav class="Main-nav"> <a href="index.html" class=" div-link">Home</a>
+            <h1>Pendabard </h1>
+            <nav class="Main-nav"> <a href="index.html" class=" div-link">Home</a>
 
 
-            <a href="contact-us.html" class="" id="contact-page">Contact Us</a>
+                <a href="contact-us.html" class="" id="contact-page">Contact Us</a>
 
 
-            <a href="#" class="">About KVM</a>
-            <a href="construction.html">WIP Page Demo</a>
-        </nav>
+                <a href="#" class="">About KVM</a>
+                <a href="construction.html">WIP Page Demo</a>
+            </nav>
         </div>
     </header>
+    
     <div class="main-container">
         <main class="main">
             <h2>Prep steps</h2>
             <h3> 2) Editing GRUB </h3>
+            <img src="./grub.png" alt="Linux Grub">
+            <p>
+                Editing GRUB
+
+                / MANJARO / 
+                </p>
+                Enable IOMMU
+                <p>
+                Set intel_iommu=on or amd_iommu=on respective to your system in grub config
+                </p>
+                Set iommu=pt in grub config for safety reasons
+                <p>
+                sudo nano /etc/default/grub
+                </p>
+                <p>
+                MANJARO
+                </p>
+                EDIT LINE: GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt quiet apparmor=1 security=apparmor  udev.log_priority=3"
+                <p>
+                UPDATE GRUB:
+                </p>
+                <p>
+                sudo update-grub
+                </p>
+                <p>
+                    And then Reboot Before next step.
+                </p>
+
+
 
         </main>
         <nav class="side-nav">
@@ -47,10 +78,8 @@
                 <li><a href="Only-with-NVIDIA.html">Only with NVIDIA</a></li>
                 <li><a href="editing-xml-file.html">Editing xml file</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-            </ol>
-
-
-
+            </ol> 
+ 
         </nav>
     </div>
 </body>

@@ -30,7 +30,15 @@
     <div class="main-container">
         <main class="main">
             <h2>Prep steps</h2>
-            <h3> 2) Editing GRUB </h3>
+            <h3> 4) Configuring of Libvirt </h3>
+            <p>Installing the packages on Manjaro in Konsole</p>
+            <p> sudo pacman -S virt-manager qemu vde2 ebtables dnsmasq bridge-utils openbsd-netcat ovmf </p>
+            <p> GENERAL ADVICE </p>
+            <p> Change directory in Konsole using this command sudo nano /etc/libvirt/libvirtd.conf</p>
+            <P> And then Uncomment these lines of code </P>
+            <p> unix_sock_group = "libvirt" </p>
+            <p> unix_sock_rw_perms = "0770"</p>
+            
 
         </main>
         <nav class="side-nav">
